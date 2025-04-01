@@ -1,0 +1,77 @@
+name: hud_spartan_flutter
+description: proyecto de prueba con serverpod y arquitectura de microservicio basada en eventos
+
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.5
+  flutter_riverpod: ^2.6.1
+  hooks_riverpod: ^2.4.0      
+  flutter_hooks: ^0.20.0
+  serverpod_flutter: 2.4.0
+  hud_spartan_client:
+    path: ../hud_spartan_client
+  go_router: ^14.8.1
+
+
+dev_dependencies:
+  flutter_lints: '>=3.0.0 <6.0.0'
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/fonts/
+  fonts:
+    - family: JetBrainsMono
+      fonts:
+        - asset: lib/assets/fonts/JetBrainsMono-Thin.ttf
+          weight: 100
+        - asset: lib/assets/fonts/JetBrainsMono-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-ExtraLight.ttf
+          weight: 200
+        - asset: lib/assets/fonts/JetBrainsMono-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-Light.ttf
+          weight: 300
+        - asset: lib/assets/fonts/JetBrainsMono-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-Regular.ttf
+          weight: 400
+        - asset: lib/assets/fonts/JetBrainsMono-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: lib/assets/fonts/JetBrainsMono-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-SemiBold.ttf
+          weight: 600
+        - asset: lib/assets/fonts/JetBrainsMono-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+        - asset: lib/assets/fonts/JetBrainsMono-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: lib/assets/fonts/JetBrainsMono-ExtraBold.ttf
+          weight: 800
+        - asset: lib/assets/fonts/JetBrainsMono-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+

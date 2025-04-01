@@ -1,0 +1,21 @@
+
+
+import 'package:hud_spartan_flutter/models/loadout_extra_info_item.dart';
+import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+
+const List<LoadoutExtraInfoItem> loadIdentityInfo = [
+  LoadoutExtraInfoItem(
+    label: 'Real Identity:',
+    labelType: TerminalTextType.info,
+    description: 'Rodrigo Martín Quintero',
+    descriptionType: TerminalTextType.neutro,
+  ),
+  LoadoutExtraInfoItem(
+    label: 'Background:',
+    labelType: TerminalTextType.info,
+    description: 'Developer, father, husband, and relentless problem-solver shaped by life´s challenges.',
+    descriptionType: TerminalTextType.neutro,
+  ),
+  
+];
+  

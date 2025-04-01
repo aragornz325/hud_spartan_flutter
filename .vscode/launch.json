@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "hud_spartan_client",
+            "cwd": "hud_spartan_client",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hud_spartan_flutter",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hud_spartan_flutter (profile mode)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "hud_spartan_flutter (release mode)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "hud_spartan_server",
+            "cwd": "hud_spartan_server",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
