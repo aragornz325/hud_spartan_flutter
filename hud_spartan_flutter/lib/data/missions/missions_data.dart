@@ -1,4 +1,6 @@
-import 'package:hud_spartan_flutter/models/mission_entry.dart';
+
+
+import 'package:hud/models/mission_entry.dart';
 
 const List<MissionEntry> missionLog = [
   MissionEntry(

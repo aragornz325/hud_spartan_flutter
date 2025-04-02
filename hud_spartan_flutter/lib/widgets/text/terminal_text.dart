@@ -14,13 +14,13 @@ enum TerminalTextType {
 }
 
 class TerminalText extends StatelessWidget {
+  const TerminalText({
+    required this.text,
+    super.key,
+    this.type = TerminalTextType.defaultType,
+  });
   final String text;
   final TerminalTextType type;
-
-  const TerminalText(
-      {super.key,
-      required this.text,
-      this.type = TerminalTextType.defaultType});
 
   static TextStyle getStyle(TerminalTextType type) {
     switch (type) {

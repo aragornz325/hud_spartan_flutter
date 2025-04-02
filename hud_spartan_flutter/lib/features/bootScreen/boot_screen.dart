@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:hud_spartan_flutter/data/bootsScreen/boot_screen.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+import 'package:hud/data/bootsScreen/boot_screen.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
 
 class BootScreen extends StatefulWidget {
   const BootScreen({super.key});
@@ -16,30 +16,24 @@ class _BootScreenState extends State<BootScreen> {
   @override
   void initState() {
     super.initState();
-    _runBootSequence();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _runBootSequence(context);
+    });
   }
 
-  void _runBootSequence() async {
+  Future<void> _runBootSequence(BuildContext context) async {
+    final bootLines = getBootLines(context);
+
     for (var i = 0; i < bootLines.length; i++) {
-      await Future.delayed(
-        const Duration(
-          milliseconds: 800,
-        ),
-      );
+      await Future.delayed(const Duration(milliseconds: 800));
       setState(() {
         _currentLine = i + 1;
       });
     }
 
-    await Future.delayed(
-      const Duration(
-        seconds: 1,
-      ),
-    );
+    await Future.delayed(const Duration(seconds: 1));
     if (mounted) {
-      context.go(
-        '/hud',
-      );
+      context.go('/hud');
     }
   }
 
@@ -47,6 +41,7 @@ class _BootScreenState extends State<BootScreen> {
   Widget build(
     BuildContext context,
   ) {
+    final localizedBootLines = getBootLines(context);
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
@@ -60,8 +55,8 @@ class _BootScreenState extends State<BootScreen> {
               index,
             ) {
               return TerminalText(
-                text: bootLines[index]['text'],
-                type: bootLines[index]['type'],
+                text: localizedBootLines[index]['text'] as String,
+                type: localizedBootLines[index]['type'] as TerminalTextType,
               );
             }),
           ),

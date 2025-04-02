@@ -1,7 +1,6 @@
 
-
-import 'package:hud_spartan_flutter/models/loadout_extra_info_item.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+import 'package:hud/models/loadout_extra_info_item.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
 
 const List<LoadoutExtraInfoItem> loadIdentityInfo = [
   LoadoutExtraInfoItem(

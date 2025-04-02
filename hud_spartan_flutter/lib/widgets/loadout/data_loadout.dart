@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hud_spartan_flutter/models/loadout_item.dart';
+import 'package:hud/models/loadout_item.dart';
 import '../text/terminal_text.dart';
 
 class DataLoadout extends StatefulWidget {

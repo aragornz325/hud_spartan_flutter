@@ -1,15 +1,17 @@
-import 'package:hud_spartan_flutter/models/loadout_item.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+
+
+import 'package:hud/models/loadout_item.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
 
 const oniPhrases = [
-  "[REDACTED]",
-  "ACCESS OVERRIDE PROTOCOL INITIATED",
-  "BLACKBOX STREAM DECRYPTED",
-  "SUBJECT: ███████",
-  ">>> ONI SIGINT TRACE LOG >>>",
-  "[CLASSIFIED TRANSMISSION DETECTED]",
-  "PROJECT: INIT.BACKEND.DART",
-  "AI CONTAINMENT FAILSAFE",
+  '[REDACTED]',
+  'ACCESS OVERRIDE PROTOCOL INITIATED',
+  'BLACKBOX STREAM DECRYPTED',
+  'SUBJECT: ███████',
+  '>>> ONI SIGINT TRACE LOG >>>',
+  '[CLASSIFIED TRANSMISSION DETECTED]',
+  'PROJECT: INIT.BACKEND.DART',
+  'AI CONTAINMENT FAILSAFE',
 ];
 
 const List<LoadoutItem> oniDataLoadout = [

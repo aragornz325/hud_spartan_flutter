@@ -1,8 +1,9 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:hud_spartan_flutter/models/loadout_item.dart';
-import 'package:hud_spartan_flutter/widgets/text/glich_text.dart';
+import 'package:hud/models/loadout_item.dart';
+import 'package:hud/widgets/text/glich_text.dart';
+
 import '../text/terminal_text.dart';
 
 class DataOniLoadout extends StatefulWidget {

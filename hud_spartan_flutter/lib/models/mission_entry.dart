@@ -1,8 +1,4 @@
 class MissionEntry {
-  final String organization;
-  final String title;
-  final String period;
-  final List<String> details;
 
   const MissionEntry({
     required this.organization,
@@ -13,10 +9,14 @@ class MissionEntry {
 
   factory MissionEntry.fromJson(Map<String, dynamic> json) {
     return MissionEntry(
-      organization: json['organization'],
-      title: json['title'],
-      period: json['period'],
-      details: List<String>.from(json['details']),
+      organization: json['organization'] as String,
+      title: json['title'] as String,
+      period: json['period'] as String,
+      details: List<String>.from(json['details'] as Iterable<dynamic>),
     );
   }
+  final String organization;
+  final String title;
+  final String period;
+  final List<String> details;
 }

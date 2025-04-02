@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hud_spartan_flutter/data/missions/missions_data.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+import 'package:hud/data/missions/missions_data.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
+
+
 
 class MissionLoadoutSimple extends StatefulWidget {
    final VoidCallback? onUpdate;
@@ -87,10 +89,12 @@ class _MissionLoadoutSimpleState extends State<MissionLoadoutSimple> {
   }
 
   TerminalTextType _detectStatusType(String text) {
-    if (text.toLowerCase().contains('status: active'))
+    if (text.toLowerCase().contains('status: active')) {
       return TerminalTextType.success;
-    if (text.toLowerCase().contains('status: terminated'))
+    }
+    if (text.toLowerCase().contains('status: terminated')) {
       return TerminalTextType.error;
+    }
     return TerminalTextType.defaultType;
   }
 

@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:hud_spartan_flutter/data/commands/commands_data.dart';
-import 'package:hud_spartan_flutter/data/oni/oni_data.dart';
-import 'package:hud_spartan_flutter/data/tactics/tactics_data.dart';
-import 'package:hud_spartan_flutter/data/weapons/weapons_data.dart';
-import 'package:hud_spartan_flutter/theme/spartan_theme.dart';
-import 'package:hud_spartan_flutter/widgets/loadout/data_loadout.dart';
-import 'package:hud_spartan_flutter/widgets/loadout/data_oni_loadout%20.dart';
-import 'package:hud_spartan_flutter/widgets/loadout/info_loadout.dart';
-import 'package:hud_spartan_flutter/widgets/loadout/mission_loadout.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+import 'package:hud/data/commands/commands_data.dart';
+import 'package:hud/data/oni/oni_data.dart';
+import 'package:hud/data/tactics/tactics_data.dart';
+import 'package:hud/data/weapons/weapons_data.dart';
+import 'package:hud/theme/spartan_theme.dart';
+import 'package:hud/utils/l10n_utils.dart';
+import 'package:hud/widgets/loadout/data_loadout.dart';
+import 'package:hud/widgets/loadout/data_oni_loadout%20.dart';
+import 'package:hud/widgets/loadout/info_loadout.dart';
+import 'package:hud/widgets/loadout/mission_loadout.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
 
 class HudScreen extends StatelessWidget {
   const HudScreen({super.key});
@@ -22,9 +23,9 @@ class HudScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           width: double.infinity,
           height: double.infinity,
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
                 'SPARTAN-HUD INTERFACE ONLINE',
                 style: TextStyle(
@@ -67,7 +68,7 @@ class _CommandTerminalState extends State<_CommandTerminal> {
     );
   }
 
-  void _handleCommand(String command) async {
+  Future<void> _handleCommand(String command) async {
     if (!_hasExecutedFirstCommand) {
       setState(() {
         _outputWidgets.clear();
@@ -85,12 +86,13 @@ class _CommandTerminalState extends State<_CommandTerminal> {
       _controller.clear();
     });
 
-    await for (final widget
-        in parseCommand(command, onUpdate: _scrollToBottom)) {
+    await for (final widget in parseCommand(
+      command,
+      context,
+      onUpdate: _scrollToBottom,
+    )) {
       if (widget is _ClearTerminal) {
-        setState(() {
-          _outputWidgets.clear();
-        });
+        setState(_outputWidgets.clear);
         return;
       }
 
@@ -127,7 +129,7 @@ class _CommandTerminalState extends State<_CommandTerminal> {
         const SizedBox(height: 10),
         Row(
           children: [
-            Text(
+            const Text(
               'λ //>',
               style: TextStyle(
                 color: SpartanColors.defaultText,
@@ -167,14 +169,18 @@ class _ClearTerminal extends StatelessWidget {
   }
 }
 
-Stream<Widget> parseCommand(String command, {VoidCallback? onUpdate}) async* {
+Stream<Widget> parseCommand(
+  String command,
+  BuildContext context, {
+  VoidCallback? onUpdate,
+}) async* {
   switch (command.trim().toLowerCase()) {
     // commandos publicos
     case 'weapons':
       yield DataLoadout(
-        accessMessage: '> [ACCESSING SPARTAN-RMQ-117 COMBAT INTERFACE...]',
-        loadingMessage: '> [LOADING WEAPONS LOADOUT...]\n',
-        completionMessage: '\n> [LOADOUT COMPLETE.]',
+        accessMessage: '> [${context.t.accessingSpartanCombatInterface}]',
+        loadingMessage: '> [${context.t.loadingWeaponsLoadout}]\n',
+        completionMessage: '\n> [${context.t.loadoutComplete}]',
         items: weaponsLoadout,
         onUpdate: onUpdate,
       );
@@ -184,23 +190,20 @@ Stream<Widget> parseCommand(String command, {VoidCallback? onUpdate}) async* {
       );
     case 'clear':
       yield const _ClearTerminal();
-      break;
     case 'tactics':
       yield DataLoadout(
-        accessMessage: '> [ACCESSING SPARTAN-RMQ-117 COMBAT INTERFACE...]',
-        loadingMessage: '> [LOADING TACTICAL LOADOUT...]\n',
-        completionMessage: '\n> [LOADOUT COMPLETE.]',
+        accessMessage: '> [${context.t.accessingSpartanCombatInterface}]',
+        loadingMessage: '> [${context.t.loadingTacticalLoadout}]\n',
+        completionMessage: '\n> [${context.t.loadoutComplete}]',
         items: tacticsLoadout,
         onUpdate: onUpdate,
       );
 
-      break;
     case final cmd when cmd.startsWith('info'):
       yield DataInfoLoadout(
         command: cmd,
         onUpdate: onUpdate,
       );
-      break;
     case 'help':
       yield DataLoadout(
         accessMessage: '> [ACCESSING AVAILABLE COMMANDS...]',
@@ -211,7 +214,6 @@ Stream<Widget> parseCommand(String command, {VoidCallback? onUpdate}) async* {
         items: availableCommandsLoadout,
         onUpdate: onUpdate,
       );
-      break;
 
     // ONI commands
     case 'whoami':
@@ -219,13 +221,12 @@ Stream<Widget> parseCommand(String command, {VoidCallback? onUpdate}) async* {
         completionMessage: '> [TRANSMISSION CLOSED...]',
         items: oniDataLoadout,
       );
-      break;
+      ;
 
     default:
       yield TerminalText(
         text: "Command '$command' not recognized.",
         type: TerminalTextType.error,
       );
-      break;
   }
 }

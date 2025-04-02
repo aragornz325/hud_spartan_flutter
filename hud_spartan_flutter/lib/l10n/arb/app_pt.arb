@@ -1,0 +1,77 @@
+{
+  "initializingNeuralLink": "Inicializando o link neural...",
+  "@initializingNeuralLink": {
+    "description": "boot step 1",
+    "type": "text"
+  },
+  "synchronizingArmorInterface": "Sincronizando a interface da armadura...",
+  "@synchronizingArmorInterface": {
+    "description": "boot step 2",
+    "type": "text"
+  },
+  "connectingToONICore": "Conectando ao núcleo ONI...",
+  "@connectingToONICore": {
+    "description": "boot step 3",
+    "type": "text"
+  },
+  "loadingSpartanTacticalOverlay": "Carregando o overlay tático Spartan...",
+  "@loadingSpartanTacticalOverlay": {
+    "description": "boot step 4",
+    "type": "text"
+  },
+  "errorHUDIntegrityCompromised": "ERRO: integridade do HUD comprometida...",
+  "@errorHUDIntegrityCompromised": {
+    "description": "boot step 5",
+    "type": "text"
+  },
+  "systemReadyWelcome": "Sistema pronto. Bem-vindo, Spartan-117.",
+  "@systemReadyWelcome": {
+    "description": "boot step 6",
+    "type": "text"
+  },
+  "thankYouForVisitingMySite": "Obrigado por visitar meu aplicativo",
+  "@thankYouForVisitingMySite": {
+    "description": "welcome message line 1",
+    "type": "text"
+  },
+  "youreAboutFullyInteractivePortfolio": "Você está prestes a entrar em um portfólio totalmente interativo",
+  "@youreAboutFullyInteractivePortfolio": {
+    "description": "welcome message line 2",
+    "type": "text"
+  },
+  "designedEmulateSpartanHUDHaloUniverse": "projetado para emular um terminal HUD Spartan no universo Halo",
+  "@designedEmulateSpartanHUDHaloUniverse": {
+    "description": "welcome message line 3",
+    "type": "text"
+  },
+  "engageExploreExecuteCommand": "Interaja, explore e execute comandos como se tivesse acesso ONI",
+  "@engageExploreExecuteCommand": {
+    "description": "welcome message line 4",
+    "type": "text"
+  },
+  "tapAnywhereInitialize": "Toque em qualquer lugar para inicializar...",
+  "@tapAnywhereInitialize": {
+    "description": "welcome message line 5",
+    "type": "text"
+  },
+  "accessingSpartanCombatInterface": "ACESSANDO A INTERFACE DE COMBATE SPARTAN-RMQ-117...",
+  "@accessingSpartanCombatInterface": {
+    "description": "combat interface access",
+    "type": "text"
+  },
+  "loadingTacticalLoadout": "CARREGANDO CARREGAMENTO TÁTICO..",
+  "@loadingTacticalLoadout": {
+    "description": "loading tactical loadout",
+    "type": "text"
+  },
+  "loadingWeaponsLoadout": "CARREGANDO CARREGAMENTO DE ARMAS..",
+  "@loadingWeaponsLoadout": {
+    "description": "loading tactical loadout",
+    "type": "text"
+  },
+  "loadoutComplete": "CARREGAMENTO COMPLETO.",
+  "@loadoutComplete": {
+    "description": "loadout complete",
+    "type": "text"
+  }
+}

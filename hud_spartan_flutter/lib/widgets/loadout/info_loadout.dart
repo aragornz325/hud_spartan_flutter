@@ -1,13 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:hud_spartan_flutter/data/info/data_info.dart';
-import 'package:hud_spartan_flutter/data/info/ia_info.dart';
-import 'package:hud_spartan_flutter/data/info/location_info.dart';
-import 'package:hud_spartan_flutter/data/info/status_info.dart';
-import 'package:hud_spartan_flutter/data/info/tech_info.dart';
-import 'package:hud_spartan_flutter/models/loadout_extra_info_item.dart';
-import 'package:hud_spartan_flutter/models/loadout_info_item.dart';
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+import 'package:hud/data/info/data_info.dart';
+import 'package:hud/data/info/ia_info.dart';
+import 'package:hud/data/info/location_info.dart';
+import 'package:hud/data/info/status_info.dart';
+import 'package:hud/data/info/tech_info.dart';
+import 'package:hud/models/loadout_extra_info_item.dart';
+import 'package:hud/models/loadout_info_item.dart';
+import 'package:hud/widgets/text/terminal_text.dart';
+
 
 class DataInfoLoadout extends StatefulWidget {
   final VoidCallback? onUpdate;
@@ -54,15 +55,15 @@ class _DataInfoLoadoutState extends State<DataInfoLoadout> {
   LoadoutResult _getLoadoutForModifier(String? modifier) {
     switch (modifier) {
       case '--status':
-        return LoadoutResult(extraInfoItems: loadStatusInfo);
+        return const LoadoutResult(extraInfoItems: loadStatusInfo);
       case '--tech':
-        return LoadoutResult(extraInfoItems: loadTechnologyInfo);
+        return const LoadoutResult(extraInfoItems: loadTechnologyInfo);
       case '--location':
-        return LoadoutResult(extraInfoItems: loadLocationInfo);
+        return const LoadoutResult(extraInfoItems: loadLocationInfo);
       case '--ia':
-        return LoadoutResult(extraInfoItems: loadIAInfo);
+        return const LoadoutResult(extraInfoItems: loadIAInfo);
       case '--origin':
-        return LoadoutResult(extraInfoItems: [
+        return const LoadoutResult(extraInfoItems: [
           LoadoutExtraInfoItem(
             label: 'Location: ',
             labelType: TerminalTextType.info,
@@ -78,7 +79,7 @@ class _DataInfoLoadoutState extends State<DataInfoLoadout> {
           ),
         ]);
       default:
-        return LoadoutResult(infoItems: loadInfo);
+        return const LoadoutResult(infoItems: loadInfo);
     }
   }
 

@@ -1,4 +1,6 @@
-import 'package:hud_spartan_flutter/widgets/text/terminal_text.dart';
+
+
+import 'package:hud/widgets/text/terminal_text.dart';
 
 class LoadoutItem {
   final String label;
