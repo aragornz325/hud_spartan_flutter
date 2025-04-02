@@ -1,0 +1,21 @@
+name: hud_spartan_flutter
+packages:
+  - hud_spartan_flutter/**
+  - hud_spartan_client/**
+  - hud_spartan_server/**
+scripts:
+  analyze:
+    exec: flutter analyze
+    description: Ejecuta análisis estático en todos los paquetes
+  test:
+    exec: flutter test
+    description: Ejecuta tests en todos los paquetes
+  format:
+    exec: dart format .
+    description: Formatea todo el código
+  build_runner:
+    exec: dart run build_runner build --delete-conflicting-outputs
+    description: Ejecuta build_runner en todos los paquetes
+  pub_get:
+    exec: dart pub get
+    description: Ejecuta 'pub get' en todos los paquetes
