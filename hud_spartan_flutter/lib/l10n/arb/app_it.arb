@@ -73,5 +73,90 @@
   "@loadoutComplete": {
     "description": "loadout complete",
     "type": "text"
+  },
+  "accessingAvailableCommands": "ACCESO AI COMANDI DISPONIBILI...",
+  "@accessingAvailableCommands": {
+    "description": "accessing available commands",
+    "type": "text"
+  },
+  "commandFound": "COMANDI TROVATI",
+  "@commandFound": {
+    "description": "command found",
+    "type": "text"
+  },
+  "oniCommandsNotShown": "COMANDI ONI NON MOSTRATI",
+  "@oniCommandsNotShown": {
+    "description": "ONI commands not shown",
+    "type": "text"
+  },
+  "transmissionClossed": "TRANSMISSION CLOSED...",
+  "@transmissionClossed": {
+    "description": "transmission closed",
+    "type": "text"
+  },
+  "command": "Comando",
+  "@command": {
+    "description": "command",
+    "type": "text"
+  },
+  "notRecognized": "non riconosciuto.",
+  "@notRecognized": {
+    "description": "not recognized",
+    "type": "text"
+  },
+  "thisWillInitiateHailingSignal": "⚠ Questo avvierà un segnale di chiamata a Spartan-rmq-117. Continuare?",
+  "@": {
+    "description": "warning hailing message",
+    "type": "text"
+  },
+  "transmittingData": "Trasmettendo dati...",
+  "@transmittingData": {
+    "description": "transmitting data",
+    "type": "text"
+  },
+  "encodingSignal": "Codifica segnale...",
+  "@encodingSignal": {
+    "description": "encoding signal",
+    "type": "text"
+  },
+  "openingChannelToSpartan": "Aprendo canale a Spartan-rmq-117...",
+  "@openingChannelToSpartan": {
+    "description": "opening channel to Spartan",
+    "type": "text"
+  },
+  "enterYourSerialID": "Inserisci il tuo numero di serie (email)",
+  "@enterYourSerialID": {
+    "description": "serial ID input",
+    "type": "text"
+  },
+  "enterYourBadgeNumber": "Inserisci il tuo numero di badge (opzionale - whatsapp)",
+  "@enterYourBadgeNumber": {
+    "description": "badge number input",
+    "type": "text"
+  },
+  "invalidPhoneNumber": "numero di telefono non valido.",
+  "@invalidPhoneNumber": {
+    "description": "invalid phone number",
+    "type": "text"
+  },
+  "indicateYourLocation": "Indica la tua posizione (opzionale)",
+  "@indicateYourLocation": {
+    "description": "location input",
+    "type": "text"
+  },
+  "messageRequired": "Messaggio richiesto.",
+  "@messageRequired": {
+    "description": "message required",
+    "type": "text"
+  },
+  "allFieldsCollected": "Tutti i campi sono stati raccolti. Inviare il segnale?",
+  "@allFieldsCollected": {
+    "description": "all fields collected",
+    "type": "text"
+  },
+  "hailingFrequencyOpenedAndClosed": "Frequenza di chiamata aperta.\nIn attesa di conferma da Spartan-rmq-117..\nFrequenza chiusa...",
+  "@hailingFrequencyOpenedAndClosed": {
+    "description": "hailing frequency opened and closed",
+    "type": "text"
   }
 }

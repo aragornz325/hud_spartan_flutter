@@ -74,5 +74,91 @@
   "@loadoutComplete": {
     "description": "loadout complete",
     "type": "text"
+  },
+  "accessingAvailableCommands": "ACCESSING AVAILABLE COMMANDS...",
+  "@accessingAvailableCommands": {
+    "description": "accessing available commands",
+    "type": "text"
+  },
+  "commandFound": "COMMANDS FOUND",
+  "@commandFound": {
+    "description": "command found",
+    "type": "text"
+  },
+  "oniCommandsNotShown": "ONI COMMANDS NOT SHOWN",
+  "@oniCommandsNotShown": {
+    "description": "ONI commands not shown",
+    "type": "text"
+  },
+  "transmissionClossed":"TRANSMISSION CLOSED...",
+  "@transmissionClossed": {
+    "description": "transmission closed",
+    "type": "text"
+  },
+  "command":"Command",
+  "@command": {
+    "description": "command",
+    "type": "text"
+  },
+  "notRecognized":"not recognized.",
+  "@notRecognized": {
+    "description": "not recognized",
+    "type": "text"
+  },
+  "thisWillInitiateHailingSignal":"⚠ This will initiate a hailing signal to Spartan-rmq-117. Proceed?",
+  "@": {
+    "description": "warning hailing message",
+    "type": "text"
+  },
+  "transmittingData":"Transmitting data...",
+  "@transmittingData": {
+    "description": "transmitting data",
+    "type": "text"
+  },
+  "encodingSignal":"Encoding signal...",
+  "@encodingSignal": {
+    "description": "encoding signal",
+    "type": "text"
+  },
+  "openingChannelToSpartan":"Opening channel to Spartan-rmq-117...",
+  "@openingChannelToSpartan": {
+    "description": "opening channel to Spartan",
+    "type": "text"
+  },
+  "enterYourSerialID":"Enter your serial ID (email)",
+  "@enterYourSerialID": {
+    "description": "serial ID input",
+    "type": "text"
+  },
+  "enterYourBadgeNumber":"Enter your badge number (opcional - whatsapp)",
+  "@enterYourBadgeNumber": {
+    "description": "badge number input",
+    "type": "text"
+  },
+  "invalidPhoneNumber":"Invalid phone number.",
+  "@invalidPhoneNumber": {
+    "description": "invalid phone number",
+    "type": "text"
+  },
+  "indicateYourLocation":"Indicate your location (optional)",
+  "@indicateYourLocation": {
+    "description": "location input",
+    "type": "text"
+  },
+  "messageRequired":"Message required.",
+  "@messageRequired": {
+    "description": "message required",
+    "type": "text"
+  },
+  "allFieldsCollected":"All fields collected.Transmit the beacon?",
+  "@allFieldsCollected": {
+    "description": "all fields collected",
+    "type": "text"
+  },
+  "hailingFrequencyOpenedAndClosed":"Hailing frequency opened.\nAwaiting acknowledgement from Spartan-rmq-117\nFrequency closed...",
+  "@hailingFrequencyOpenedAndClosed": {
+    "description": "hailing frequency opened and closed",
+    "type": "text"
   }
+
 }

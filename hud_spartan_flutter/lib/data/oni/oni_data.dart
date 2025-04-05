@@ -14,7 +14,7 @@ const oniPhrases = [
   'AI CONTAINMENT FAILSAFE',
 ];
 
-const List<LoadoutItem> oniDataLoadout = [
+const List<LoadoutItem> whoamiDataLoadout = [
   LoadoutItem(
     label: 'The Civilian',
     tech: '',
