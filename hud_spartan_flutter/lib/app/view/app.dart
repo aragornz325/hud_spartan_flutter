@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hud/features/HudScreen/hud_screen.dart';
 import 'package:hud/features/bootScreen/boot_screen.dart';
+import 'package:hud/features/privacyPolicy/privacy%20_policy.dart';
 import 'package:hud/features/welcomeScreen/welcome_screen.dart';
 import 'package:hud/l10n/l10n.dart';
 import 'package:hud/providers/locale/locale_provider.dart';
@@ -29,6 +30,10 @@ final _router = GoRouter(
     GoRoute(
       path: '/boot',
       builder: (context, state) => const BootScreen(),
+    ),
+    GoRoute(
+      path: '/privacyPolicy',
+      builder: (context, state) => const PrivacyPolicy(),
     ),
   ],
 );

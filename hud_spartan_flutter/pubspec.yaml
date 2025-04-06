@@ -1,6 +1,6 @@
 name: hud
 description: A Very Good Project created by Very Good CLI.
-version: 1.0.0+1
+version: 1.0.1+1
 publish_to: none
 
 environment:
@@ -25,6 +25,8 @@ dependencies:
   intl: ^0.19.0
   dio: ^5.8.0+1
   pretty_dio_logger: ^1.4.0
+  palette_generator: ^0.3.3+6
+  camera: ^0.11.1
 
 dev_dependencies:
   flutter_test:

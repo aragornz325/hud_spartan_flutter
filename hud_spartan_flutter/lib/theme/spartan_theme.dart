@@ -11,4 +11,5 @@ class SpartanColors {
   static const neutro = Colors.white;
   static const info = Color.fromARGB(248, 213, 157, 240);
   static const decrypt = Color.fromARGB(250, 96, 111, 240); 
+  static const title = Color.fromARGB(255, 0, 255, 0);
 }

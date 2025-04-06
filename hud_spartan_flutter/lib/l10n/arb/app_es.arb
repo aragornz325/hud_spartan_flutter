@@ -158,6 +158,60 @@
   "@hailingFrequencyOpenedAndClosed": {
     "description": "hailing frequency opened and closed",
     "type": "text"
+  },
+  "privacyPolicy": "Política de privacidad",
+  "@privacyPolicy": {
+    "description": "privacy policy",
+    "type": "text"
+  },
+  "notGetAnyInfo":"HUD Spartan es una aplicación experimental de interfaz tipo HUD (Heads-Up Display), diseñada como parte de un portafolio personal. Su propósito es ofrecer una experiencia visual inmersiva inspirada en tecnología futurista.",
+  "@notGetAnyInfo": {
+    "description": "no info collected",
+    "type": "text"
+  },
+  "cameraPermission":"Permiso de Cámara",
+  "@cameraPermission": {
+    "description": "camera permission",
+    "type": "text"
+  },
+  "cameraPermissionDescription":"La aplicación solicita acceso a la cámara exclusivamente para capturar información de color en tiempo real, con el fin de generar efectos visuales dinámicos en pantalla.No se capturan, almacenan ni transmiten imágenes ni videos.",
+  "@cameraPermissionDescription": {
+    "description": "camera permission description",
+    "type": "text"
+  },
+  "userPrivacy":"Privacidad del Usuario",
+  "@userPrivacy": {
+    "description": "user privacy",
+    "type": "text"
+  },
+  "noPersonalInformationCollected":"No se recolecta información personal.",
+  "@noPersonalInformationCollected": {
+    "description": "no personal information collected",
+    "type": "text"
+  },
+  "noDataStoredServers":"No se almacenan datos en servidores.",
+  "@noDataStoredServers": {
+    "description": "no data stored on servers",
+    "type": "text"
+  },
+  "noDataSharedThirdParties":"No se comparten datos con terceros.",
+  "@noDataSharedThirdParties": {
+    "description": "no data shared with third parties",
+    "type": "text"
+  },
+  "appRunsCompletelyLocally":"La app funciona de manera completamente local en el dispositivo del usuario.",
+  "@appRunsCompletelyLocally": {
+    "description": "The app runs completely locally on the user's device.",
+    "type": "text"
+  },
+  "contact":"Contacto",
+  "@contact": {
+    "description": "contact",
+    "type": "text"
+  },
+  "contactDescription":"Para cualquier duda o consulta, podés contactarme a través del formulario disponible en la aplicación o escribiendo a:\n\n",
+  "@contactDescription": {
+    "description": "contact description",
+    "type": "text"
   }
-  
 }

@@ -158,6 +158,61 @@
   "@hailingFrequencyOpenedAndClosed": {
     "description": "hailing frequency opened and closed",
     "type": "text"
+  },
+  "privacyPolicy": "Política de Privacidade",
+  "@privacyPolicy": {
+    "description": "privacy policy",
+    "type": "text"
+  },
+  "notGetAnyInfo":"HUD Spartan é um aplicativo experimental de interface HUD (Heads-Up Display), projetado como parte de um portfólio pessoal. Seu objetivo é oferecer uma experiência visual envolvente inspirada na tecnologia futurista.",
+  "@notGetAnyInfo": {
+    "description": "no info collected",
+    "type": "text"
+  },
+  "cameraPermission":"Permissão de Câmera",
+  "@cameraPermission": {
+    "description": "camera permission",
+    "type": "text"
+  },
+  "cameraPermissionDescription":"O aplicativo solicita acesso à câmera exclusivamente para capturar informações de cores em tempo real, a fim de gerar efeitos visuais dinâmicos na tela. Nenhuma imagem ou vídeo é capturado, armazenado ou transmitido.",
+  "@cameraPermissionDescription": {
+    "description": "camera permission description",
+    "type": "text"
+  },
+  "userPrivacy":"Privacidade do Usuário",
+  "@userPrivacy": {
+    "description": "user privacy",
+    "type": "text"
+  },
+  "noPersonalInformationCollected":"Nenhuma informação pessoal coletada.",
+  "@noPersonalInformationCollected": {
+    "description": "no personal information collected",
+    "type": "text"
+  },
+  "noDataStoredServers":"Nenhum dado armazenado em servidores.",
+  "@noDataStoredServers": {
+    "description": "no data stored on servers",
+    "type": "text"
+  },
+  "noDataSharedThirdParties":"Nenhum dado é compartilhado com terceiros.",
+  "@noDataSharedThirdParties": {
+    "description": "no data shared with third parties",
+    "type": "text"
+  },
+  "appRunsCompletelyLocally":"O aplicativo é executado completamente localmente no dispositivo do usuário.",
+  "@appRunsCompletelyLocally": {
+    "description": "The app runs completely locally on the user's device.",
+    "type": "text"
+  },
+  "contact":"Contacto",
+  "@contact": {
+    "description": "contact",
+    "type": "text"
+  },
+  "contactDescription":"Para qualquer dúvida ou questão poderá contactar-me através do formulário disponível na candidatura ou escrevendo para:\n\n",
+  "@contactDescription": {
+    "description": "contact description",
+    "type": "text"
   }
 
 }

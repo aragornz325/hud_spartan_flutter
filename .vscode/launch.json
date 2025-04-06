@@ -1,40 +1,104 @@
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // --- CLIENT ---
         {
             "name": "hud_spartan_client",
             "cwd": "hud_spartan_client",
             "request": "launch",
             "type": "dart"
         },
-        {
-            "name": "hud_spartan_flutter",
-            "cwd": "hud_spartan_flutter",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "hud_spartan_flutter (profile mode)",
-            "cwd": "hud_spartan_flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "hud_spartan_flutter (release mode)",
-            "cwd": "hud_spartan_flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
+
+        // --- SERVER ---
         {
             "name": "hud_spartan_server",
             "cwd": "hud_spartan_server",
             "request": "launch",
             "type": "dart"
+        },
+
+        // --- DEVELOPMENT ---
+        {
+            "name": "hud_spartan_flutter (development)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": ["--flavor", "development"]
+        },
+        {
+            "name": "hud_spartan_flutter (development - profile)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "flutterMode": "profile",
+            "args": ["--flavor", "development"]
+        },
+        {
+            "name": "hud_spartan_flutter (development - release)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "flutterMode": "release",
+            "args": ["--flavor", "development"]
+        },
+
+        // --- STAGING ---
+        {
+            "name": "hud_spartan_flutter (staging)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "args": ["--flavor", "staging"]
+        },
+        {
+            "name": "hud_spartan_flutter (staging - profile)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "flutterMode": "profile",
+            "args": ["--flavor", "staging"]
+        },
+        {
+            "name": "hud_spartan_flutter (staging - release)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "flutterMode": "release",
+            "args": ["--flavor", "staging"]
+        },
+
+        // --- PRODUCTION ---
+        {
+            "name": "hud_spartan_flutter (production)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": ["--flavor", "production"]
+        },
+        {
+            "name": "hud_spartan_flutter (production - profile)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "flutterMode": "profile",
+            "args": ["--flavor", "production"]
+        },
+        {
+            "name": "hud_spartan_flutter (production - release)",
+            "cwd": "hud_spartan_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "flutterMode": "release",
+            "args": ["--flavor", "production"]
         }
     ]
 }

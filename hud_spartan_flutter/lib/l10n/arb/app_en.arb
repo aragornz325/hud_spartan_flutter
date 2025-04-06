@@ -90,75 +90,129 @@
     "description": "ONI commands not shown",
     "type": "text"
   },
-  "transmissionClossed":"TRANSMISSION CLOSED...",
+  "transmissionClossed": "TRANSMISSION CLOSED...",
   "@transmissionClossed": {
     "description": "transmission closed",
     "type": "text"
   },
-  "command":"Command",
+  "command": "Command",
   "@command": {
     "description": "command",
     "type": "text"
   },
-  "notRecognized":"not recognized.",
+  "notRecognized": "not recognized.",
   "@notRecognized": {
     "description": "not recognized",
     "type": "text"
   },
-  "thisWillInitiateHailingSignal":"⚠ This will initiate a hailing signal to Spartan-rmq-117. Proceed?",
+  "thisWillInitiateHailingSignal": "⚠ This will initiate a hailing signal to Spartan-rmq-117. Proceed?",
   "@": {
     "description": "warning hailing message",
     "type": "text"
   },
-  "transmittingData":"Transmitting data...",
+  "transmittingData": "Transmitting data...",
   "@transmittingData": {
     "description": "transmitting data",
     "type": "text"
   },
-  "encodingSignal":"Encoding signal...",
+  "encodingSignal": "Encoding signal...",
   "@encodingSignal": {
     "description": "encoding signal",
     "type": "text"
   },
-  "openingChannelToSpartan":"Opening channel to Spartan-rmq-117...",
+  "openingChannelToSpartan": "Opening channel to Spartan-rmq-117...",
   "@openingChannelToSpartan": {
     "description": "opening channel to Spartan",
     "type": "text"
   },
-  "enterYourSerialID":"Enter your serial ID (email)",
+  "enterYourSerialID": "Enter your serial ID (email)",
   "@enterYourSerialID": {
     "description": "serial ID input",
     "type": "text"
   },
-  "enterYourBadgeNumber":"Enter your badge number (opcional - whatsapp)",
+  "enterYourBadgeNumber": "Enter your badge number (opcional - whatsapp)",
   "@enterYourBadgeNumber": {
     "description": "badge number input",
     "type": "text"
   },
-  "invalidPhoneNumber":"Invalid phone number.",
+  "invalidPhoneNumber": "Invalid phone number.",
   "@invalidPhoneNumber": {
     "description": "invalid phone number",
     "type": "text"
   },
-  "indicateYourLocation":"Indicate your location (optional)",
+  "indicateYourLocation": "Indicate your location (optional)",
   "@indicateYourLocation": {
     "description": "location input",
     "type": "text"
   },
-  "messageRequired":"Message required.",
+  "messageRequired": "Message required.",
   "@messageRequired": {
     "description": "message required",
     "type": "text"
   },
-  "allFieldsCollected":"All fields collected.Transmit the beacon?",
+  "allFieldsCollected": "All fields collected.Transmit the beacon?",
   "@allFieldsCollected": {
     "description": "all fields collected",
     "type": "text"
   },
-  "hailingFrequencyOpenedAndClosed":"Hailing frequency opened.\nAwaiting acknowledgement from Spartan-rmq-117\nFrequency closed...",
+  "hailingFrequencyOpenedAndClosed": "Hailing frequency opened.\nAwaiting acknowledgement from Spartan-rmq-117\nFrequency closed...",
   "@hailingFrequencyOpenedAndClosed": {
     "description": "hailing frequency opened and closed",
     "type": "text"
+  },
+  "privacyPolicy": "Política de privacidad",
+  "@privacyPolicy": {
+    "description": "privacy policy",
+    "type": "text"
+  },
+  "notGetAnyInfo":"HUD Spartan is an experimental HUD (Heads-Up Display) interface application designed as part of a personal portfolio. Its purpose is to offer an immersive visual experience inspired by futuristic technology.",
+  "@notGetAnyInfo": {
+    "description": "no info collected",
+    "type": "text"
+  },
+  "cameraPermission":"Camera Permission",
+  "@cameraPermission": {
+    "description": "camera permission",
+    "type": "text"
+  },
+  "cameraPermissionDescription":"The app requests camera access exclusively to capture real-time color information to generate dynamic on-screen visual effects. No images or videos are captured, stored, or transmitted.",
+  "@cameraPermissionDescription": {
+    "description": "camera permission description",
+    "type": "text"
+  },
+  "userPrivacy":"User Privacy",
+  "@userPrivacy": {
+    "description": "user privacy",
+    "type": "text"
+  },
+  "noPersonalInformationCollected":"No personal information collected.",
+  "@noPersonalInformationCollected": {
+    "description": "no personal information collected",
+    "type": "text"
+  },
+  "noDataStoredServers":"No data stored on servers.",
+  "@noDataStoredServers": {
+    "description": "no data stored on servers",
+    "type": "text"
+  },
+  "noDataSharedThirdParties":"No data shared with third parties.",
+  "@noDataSharedThirdParties": {
+    "description": "no data shared with third parties",
+    "type": "text"
+  },
+  "appRunsCompletelyLocally":"The app runs completely locally on the user's device.",
+  "@appRunsCompletelyLocally": {
+    "description": "The app runs completely locally on the user's device.",
+    "type": "text"
+  },
+  "contact":"Contacto",
+  "@contact": {
+    "description": "contact",
+    "type": "text"
+  },
+  "contactDescription":"For any questions or concerns, you can contact me using the form available in the app or by writing to:\n\n",
+  "@contactDescription": {
+    "description": "contact description",
+    "type": "text"
   }
-
 }

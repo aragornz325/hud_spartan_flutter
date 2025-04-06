@@ -23,13 +23,18 @@ if (flutterVersionName == null) {
 }
 
 def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file('key.properties')
+def keystorePropertiesFile = rootProject.file('../key.properties')
 if (keystorePropertiesFile.exists()) {
+    println("🛡️ Leyendo key.properties...")
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    println("🛡️ storeFile = ${keystoreProperties['storeFile']}")
+    println("🛡️ keyAlias = ${keystoreProperties['keyAlias']}")
+} else {
+    println("⚠️ No se encontró key.properties en ${keystorePropertiesFile}")
 }
 
 android {
-    namespace "com.example.verygoodcore.hud"
+    namespace "com.legendarycode.hud"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -48,7 +53,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.verygoodcore.hud"
+        applicationId "com.legendarycode.hud"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
@@ -60,16 +65,16 @@ android {
     signingConfigs {
         if (System.getenv("ANDROID_KEYSTORE_PATH")) {
             release {
-                storeFile file(System.getenv("ANDROID_KEYSTORE_PATH"))
-                keyAlias System.getenv("ANDROID_KEYSTORE_ALIAS")
-                keyPassword System.getenv("ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
-                storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
-            }
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile new File(rootProject.projectDir.parentFile, keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            } 
         } else {
             release {
                 keyAlias keystoreProperties['keyAlias']
                 keyPassword keystoreProperties['keyPassword']
-                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                storeFile new File(rootProject.projectDir.parentFile, keystoreProperties['storeFile'])
                 storePassword keystoreProperties['storePassword']
             }
         }

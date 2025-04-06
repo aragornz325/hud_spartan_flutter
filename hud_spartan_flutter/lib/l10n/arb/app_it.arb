@@ -154,9 +154,64 @@
     "description": "all fields collected",
     "type": "text"
   },
+  "privacyPolicy": "Politica sulla privacy",
+  "@privacyPolicy": {
+    "description": "privacy policy",
+    "type": "text"
+  },
   "hailingFrequencyOpenedAndClosed": "Frequenza di chiamata aperta.\nIn attesa di conferma da Spartan-rmq-117..\nFrequenza chiusa...",
   "@hailingFrequencyOpenedAndClosed": {
     "description": "hailing frequency opened and closed",
+    "type": "text"
+  },
+  "notGetAnyInfo":"HUD Spartan è un'applicazione sperimentale di interfaccia HUD (Heads-Up Display), progettata come parte di un portfolio personale. Il suo scopo è offrire un'esperienza visiva coinvolgente ispirata alla tecnologia futuristica.",
+  "@notGetAnyInfo": {
+    "description": "no info collected",
+    "type": "text"
+  },
+  "cameraPermission":"Permesso di fotocamera",
+  "@cameraPermission": {
+    "description": "camera permission",
+    "type": "text"
+  },
+  "cameraPermissionDescription":"L'applicazione richiede l'accesso alla fotocamera esclusivamente per acquisire informazioni sul colore in tempo reale al fine di generare effetti visivi dinamici sullo schermo. Nessuna immagine o video viene catturato, archiviato o trasmesso.",
+  "@cameraPermissionDescription": {
+    "description": "camera permission description",
+    "type": "text"
+  },
+  "userPrivacy":"Politica sulla privacy dell'utente",
+  "@userPrivacy": {
+    "description": "user privacy",
+    "type": "text"
+  },
+  "noPersonalInformationCollected":"Nessuna informazione personale raccolta.",
+  "@noPersonalInformationCollected": {
+    "description": "no personal information collected",
+    "type": "text"
+  },
+  "noDataStoredServers":"Nessun dato memorizzato sui server.",
+  "@noDataStoredServers": {
+    "description": "no data stored on servers",
+    "type": "text"
+  },
+  "noDataSharedThirdParties":"Nessun dato condiviso con terze parti.",
+  "@noDataSharedThirdParties": {
+    "description": "no data shared with third parties",
+    "type": "text"
+  },
+  "appRunsCompletelyLocally":"L'app funziona completamente localmente sul dispositivo dell'utente.",
+  "@appRunsCompletelyLocally": {
+    "description": "The app runs completely locally on the user's device.",
+    "type": "text"
+  },
+  "contact":"Contatto",
+  "@contact": {
+    "description": "contact",
+    "type": "text"
+  },
+  "contactDescription":"Per qualsiasi domanda o dubbio potete contattarmi attraverso il form disponibile nell'applicazione oppure scrivendo a:\n\n",
+  "@contactDescription": {
+    "description": "contact description",
     "type": "text"
   }
 }

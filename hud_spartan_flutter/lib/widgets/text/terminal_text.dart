@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../theme/spartan_theme.dart';
+import 'package:hud/theme/spartan_theme.dart';
 
 enum TerminalTextType {
   defaultType,
@@ -10,7 +10,8 @@ enum TerminalTextType {
   decrypt,
   oni,
   inactive,
-  info
+  info,
+  title
 }
 
 class TerminalText extends StatelessWidget {
@@ -64,10 +65,16 @@ class TerminalText extends StatelessWidget {
           letterSpacing: 1.2,
           shadows: [
             Shadow(
-                color: Colors.deepPurpleAccent,
-                blurRadius: 4,
-                offset: Offset(0, 0)),
+              color: Colors.deepPurpleAccent,
+              blurRadius: 4,
+            ),
           ],
+        );
+      case TerminalTextType.title:
+        return const TextStyle(
+          color: SpartanColors.title,
+          fontFamily: 'JetBrainsMono',
+          fontWeight: FontWeight.bold,
         );
       case TerminalTextType.neutro:
         return const TextStyle(
